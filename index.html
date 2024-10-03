@@ -1,23 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- Fork and clone the Picture This repository. Inside the repository is an index.html file, a style.css folder, and a images folder containing one image.
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Picture This!</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+Using the image tables below, determine which image sizes will be necessary. There will be two image ratios: landscape and square.
 
-<body>
-  <header class="header">
-    <div class="title">
-      <h1>Picture This!</h1>
-      <h4>My Really Cool Blog Post</h4>
-    </div>
-    <img src="images/museum.jpg" alt="placeholder">
+Use a photo editing program, like Photoshop, or resizing service, like derivv, to create multiple sized images of the provided image.
 
-  </header>
-</body>
+Add the appropriate HTML, so that if the viewport is smaller than 960px, the image will be displayed in landscape and at an adequate resolution.
 
-</html>
+Add the appropriate HTML, so that if the viewport is 960px or larger, the image displayed is square and at an adequate resolution.
+
+Setup the GitHub Pages website for your forked repository
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ 
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Picture This!</title>
+   <link rel="stylesheet" href="style.css">
+ </head>
+ 
+ <body>
+   <header class="header">
+     <div class="title">
+       <h1>Picture This!</h1>
+       <h4>My Really Cool Blog Post</h4>
+     </div>
+ 
+     <picture>
+ 
+       <!-- landscap image (ls) displayed aaccording to the requirements   -->
+       <source media="(max-width:959px)" srcset="images/museum-ls-320px.jpg 320w,
+                 images/museum-ls-480px.jpg 480w,
+                 images/museum-ls-640px.jpg 640w,
+                 images/museum-ls-720px.jpg 720w,
+                 images/museum-ls-960px.jpg 960w,
+                 images/museum-ls-1440px.jpg 1440w,
+                 images/museum-ls-1920px.jpg 1920w,
+                 images/museum-ls-2160px.jpg 2160w,
+                 images/museum-ls-2320px.jpg 2320w,
+                 images/museum-ls-2520px.jpg 2520w,
+                 images/museum-ls-2880px.jpg 2880w" sizes="110vw">
+ 
+       <!-- square  -->
+       <source media="(min-width:960px)" srcset="images/museum-sq-480px.jpg 480w,
+                 images/museum-sq-640px.jpg 640w,
+                 images/museum-sq-800px.jpg 800w,
+                 images/museum-sq-960px.jpg 960w,
+                 images/museum-sq-1280px.jpg 1280w,
+                 images/museum-sq-1440px.jpg 1440w,
+                 images/museum-sq-1600px.jpg 1600w,
+                 images/museum-sq-1920px.jpg 1920w,
+                 images/museum-sq-2400px.jpg 2400w" sizes="50vw">
+ 
+       <img src="images/museum.jpg" alt="placeholder">
+ 
+     </picture>
+   </header>
+ </body>
+ 
+ </html>
+
+ 
