@@ -5,8 +5,6 @@ body {
   margin: 0;
   border: 0;
   font-family: 'Roboto', sans-serif;
-  background-color: #f4f4f9;
-  color: #333;
 }
 
 .header {
@@ -14,61 +12,29 @@ body {
   grid-template-columns: 1fr;
   align-items: center;
   background-color: cadetblue;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .title {
   padding: 50px 25px;
   text-align: center;
-  transition: transform 0.3s ease; 
-}
-
-.title:hover {
-  transform: scale(1.05); 
 }
 
 h1 {
   font-size: 3rem;
   margin: 0;
-  color: white;
 }
 
 h4 {
   font-size: 1.5rem;
   font-weight: 300;
-  color: #e0e0e0;
 }
 
 img {
   display: block;
-  height: auto; 
-  max-width: 100%;
-  border-radius: 10px; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease; 
-  margin-left: 17px;
-}
-
-img:hover {
-  transform: scale(1.02); 
 }
 
 @media (min-width: 960px) {
   .header {
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px; 
-  }
-
-  .title {
-    text-align: left; 
-  }
-
-  h1 {
-    font-size: 4rem; 
-  }
-
-  h4 {
-    font-size: 2rem; 
   }
 }
